@@ -1,4 +1,4 @@
-# Ticket Availability Detector and Email Notifier
+# Ticket availability detector and email notifier
 
 This project automates the process of checking ticket availability on Shotgun and sends an email notification when tickets are available.
 Handle the situation where there is still one category of tickets available but some categories at a lower price reappear from time to time.
