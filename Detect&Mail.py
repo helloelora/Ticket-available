@@ -18,6 +18,7 @@ load_dotenv()
 
 # Email credentials from environment variables
 sender_email = os.getenv("SENDER_EMAIL")
+key_email = os.getenv("KEY_EMAIL")
 receiver_email = os.getenv("RECEIVER_EMAIL")
 
 def document_initialised(browser):
@@ -72,7 +73,7 @@ if len(elements) > 1:
     # Set up the SMTP server
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(sender_email, "your key")
+    server.login(sender_email, key_email)
 
     # Send the email
     text = msg.as_string()
